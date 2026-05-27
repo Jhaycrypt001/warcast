@@ -1,0 +1,1 @@
+WARCAST is an autonomous AI commander that monitors live football matches, detects tactical events (goals, red cards, substitution waves), generates military-intelligence-style dispatches, mints them as ERC-1155 NFTs on X Layer, and auto-resolves predictions onchain — all without human intervention. Built for the X Cup Hackathon, powered by Groq + API-Football + Thirdweb.
