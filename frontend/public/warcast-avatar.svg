@@ -1,0 +1,14 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">WARCAST avatar</title>
+  <desc id="desc">Square social avatar version of the WARCAST angular W broadcast monogram.</desc>
+  <rect width="1024" height="1024" fill="#0F0F0E"/>
+  <g transform="scale(2)">
+    <path d="M88 126H151L190 309L236 126H276L322 309L361 126H424L355 386H299L256 239L213 386H157L88 126Z" fill="#F4F0E6"/>
+    <path d="M236 126H276L256 194L236 126Z" fill="#0F0F0E"/>
+    <path d="M176 126H217L197 204L176 126Z" fill="#0F0F0E" opacity="0.96"/>
+    <path d="M295 126H336L315 204L295 126Z" fill="#0F0F0E" opacity="0.96"/>
+    <path d="M144 424H368" stroke="#F4F0E6" stroke-width="20" stroke-linecap="square"/>
+    <path d="M218 88H294" stroke="#F4F0E6" stroke-width="18" stroke-linecap="square"/>
+    <path d="M188 58H324" stroke="#F4F0E6" stroke-width="14" stroke-linecap="square" opacity="0.48"/>
+  </g>
+</svg>
