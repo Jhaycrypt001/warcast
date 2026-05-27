@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\\\\\.env\")",
+      "Bash(dir \"C:\\\\Users\\\\USER\\\\warcast\\\\frontend\\\\app\" /b)"
+    ]
+  }
+}
