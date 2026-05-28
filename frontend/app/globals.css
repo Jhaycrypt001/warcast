@@ -185,7 +185,7 @@ nav {
 /* ================= HERO TEXT ================= */
 .hero-content { max-width: 620px; z-index: 1; position: relative; margin: 0 auto; }
 .hero-heading { font-size: clamp(2.4rem, 5.5vw, 4rem); font-weight: 300; line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 16px 0; }
-.hero-heading strong { display: block; font-weight: 400; margin-top: 4px; background: linear-gradient(to right, #ffffff, #a98597); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero-heading strong { display: block; font-weight: 400; margin-top: 4px; background: linear-gradient(to right, #ffffff, #a98597); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .hero-sub { font-size: 0.9rem; color: rgba(255,255,255,0.4); max-width: 440px; margin: 0 auto 36px; line-height: 1.5; }
 
 .btn-cta { display: inline-block; background: white; color: #0a0a0f; text-decoration: none; padding: 12px 32px; border-radius: 999px; font-weight: 600; font-size: 0.95rem; transition: all 0.2s; }
@@ -1170,12 +1170,14 @@ nav {
 @media (max-width: 520px) {
   .feed-item {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 14px;
   }
 
   .btn-mint {
+    display: block;
     width: 100%;
+    box-sizing: border-box;
     text-align: center;
   }
 
