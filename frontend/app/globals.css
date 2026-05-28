@@ -8,6 +8,10 @@
   --border: rgba(255, 255, 255, 0.08);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background-color: var(--bg);
@@ -17,6 +21,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 14px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* ================= NAVBAR STRUCTURE ================= */
@@ -201,16 +208,19 @@ nav {
   max-width: 650px;
   margin: 40px auto 0;
   text-align: left;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .feed-header {
   display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 8px;
   margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .feed-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); display: flex; align-items: center; gap: 8px; margin: 0; font-weight: 600; }
 .live-dot { width: 8px; height: 8px; background: #ef4444; border-radius: 50%; animation: pulse 2s infinite; }
-.node-id { font-size: 0.75rem; font-family: monospace; color: var(--text-muted); }
+.node-id { font-size: 0.75rem; font-family: monospace; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
 
 .feed-list { display: flex; flex-direction: column; gap: 16px; }
 .feed-item {
@@ -218,6 +228,12 @@ nav {
   padding: 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);
   border-radius: 12px; transition: border-color 0.3s, background 0.3s;
   gap: 18px;
+  overflow: hidden;
+}
+
+.feed-content {
+  flex: 1;
+  min-width: 0;
 }
 .feed-item:hover { border-color: rgba(200, 160, 224, 0.3); background: rgba(255,255,255,0.05); }
 
