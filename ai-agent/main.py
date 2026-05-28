@@ -189,8 +189,8 @@ if __name__ == "__main__":
     while True:
         try:
             run_production_pipeline()
-            print(f"\n[*] Next scan in 5 minutes... (Ctrl+C to stop)")
-            time.sleep(300)
+            print(f"\n[*] Next scan in 20 minutes... (Ctrl+C to stop)")
+            time.sleep(1200)
         except KeyboardInterrupt:
             print("\n[*] WARCAST Commander shutting down.")
             break
