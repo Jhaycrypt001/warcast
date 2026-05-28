@@ -1,6 +1,8 @@
 import os
 import time
 import datetime
+import threading
+from flask import Flask
 from dotenv import load_dotenv
 
 dotenv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
@@ -165,10 +167,24 @@ def run_production_pipeline():
             continue
 
 
+_app = Flask(__name__)
+
+@_app.route("/")
+def _health():
+    return "WARCAST Commander running", 200
+
+
+def _start_health_server():
+    port = int(os.environ.get("PORT", 10000))
+    _app.run(host="0.0.0.0", port=port)
+
+
 if __name__ == "__main__":
     print("⚡ WARCAST AI COMMANDER — ONLINE")
     print("   Live On-Chain Tactical Intelligence — X Layer")
     print("=" * 60)
+
+    threading.Thread(target=_start_health_server, daemon=True).start()
 
     while True:
         try:
